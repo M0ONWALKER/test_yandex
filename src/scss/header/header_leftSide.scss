@@ -1,0 +1,64 @@
+.leftSide__logo{margin-top: 124px;}
+
+.leftSide__title{
+    font-family: "text-black"; font-size: 72px;
+    margin-top: 72px;
+}
+
+.leftSide__text{
+    font-family: "text-medium"; font-size: 24px;
+    margin-top: 48px;
+    line-height: 31px;
+}
+
+.leftSide__price{
+    background-color: #E0B8FF;
+    padding: 2px 12px;
+    border-radius: 500px;
+    &.leftSide__price::after{
+        width: 100px;
+        content: "3190₽";
+        position: absolute;
+        color: #808080;
+        background-color: #d8d9fd;
+        font-size: 16px;
+        text-decoration: line-through;
+        text-align: right;
+        padding: 1px 4px 0px 0px;
+        margin-top: -1px; margin-left: -30px;
+        border-radius: 500px;
+        z-index: -1;
+    }
+}
+
+.leftSide__btn{
+    margin: 44px 0px;
+    width: 318px;
+    height: 65px;
+    background: #FFDE40;
+    box-shadow: 0px 4px 98px rgba(255, 222, 64, 0.59);
+    border-radius: 36px;
+    border: none;
+    font-family: "text-medium"; font-size: 24px;
+}
+.leftSide__btn:hover{
+    cursor: pointer;
+    background: #ffda1f;
+}
+
+@media (max-width: 800px) {
+    .leftSide__btn{
+        margin-left: -50px;
+        width: 90%;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+    }
+}
+@media (max-width: 700px) {
+    .leftSide__title{font-size: 36px;}
+    .leftSide__text{font-size: 18px;}
+    .leftSide__price{
+        padding: 5px 12px;
+    }
+}

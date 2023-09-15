@@ -1,0 +1,109 @@
+.news__images{
+    position: relative;
+}
+.main__subtitle_news{
+    font-family: 'text-black';
+    font-size: 48px;
+    margin: 124px 48px 48px 10px;
+}
+
+.news__text{
+    margin-left: 10px;
+    width: 442px;
+    font-family: "text-medium";
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+.slider{
+    position: relative;
+    width: 100%;
+}
+.slider__pagination{
+    display: flex;
+    overflow: hidden;
+    height: 524px;
+}
+.slider__slide{
+    position: absolute;
+    height: auto; 
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.active{
+    opacity: 1;
+}
+.slider__control{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.slider__btn_prev{
+    margin-right: 25px;
+    transform: rotate(180deg);
+    &.slider__btn_prev:hover{
+        cursor: pointer;
+    }
+}
+.slider__btn_next{
+    margin-left: 25px;
+    &.slider__btn_next:hover{
+        cursor: pointer;
+    }
+}
+
+.news__main_img{
+    position: relative;
+    top: -170px;
+}
+.news__support_img1{
+    position: absolute;
+    top: -250px;
+    left: 850px;
+    filter: drop-shadow(-14px 51px 100px #D2BDFF);
+}
+.news__support_img2{
+    position: absolute;
+    left: -70px;
+    top: 70px;
+    filter: drop-shadow(-14px 51px 100px #D2BDFF);
+
+}
+.news__support_img3{
+    position: absolute;
+    top: 650px;
+    left: 800px;
+    filter: drop-shadow(-14px 51px 100px #D9C7FF);
+}
+
+@media (max-width: 1150px){
+    .news__images{
+        width: 90%;
+    }
+    .news__main_img{
+        width: 100%; height: auto;
+        position: relative;
+        top: -20px;
+    }
+    .news__support_img1, .news__support_img3 {display: none;}
+}
+@media (max-width: 700px) {
+    .main__subtitle_news{font-size:32px}
+    .news__text{font-size: 16px; width: auto;}
+    .news__main_img{display: none;}
+}
+@media (min-width: 700px) {
+    .slider{
+        display: none;
+    }
+}
+@media (max-width: 650px) {.slider__pagination{height: 470px;}}
+@media (max-width: 590px) {.slider__pagination{height: 430px;}}
+@media (max-width: 530px) {.slider__pagination{height: 400px;}}
+@media (max-width: 500px) {.slider__pagination{height: 370px;}}
+@media (max-width: 460px) {.slider__pagination{height: 320px;}}
+@media (max-width: 415px) {.slider__pagination{height: 290px;}}
+@media (max-width: 380px) {.slider__pagination{height: 260px;}}
+@media (max-width: 340px) {.slider__pagination{height: 225px;}}

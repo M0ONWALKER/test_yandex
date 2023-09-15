@@ -1,0 +1,1 @@
+.header{display:grid;grid-template-columns:repeat(auto-fill, 45%);justify-content:center}@media(max-width: 1265px){.header{display:flex;flex-direction:column;margin-left:50px}}

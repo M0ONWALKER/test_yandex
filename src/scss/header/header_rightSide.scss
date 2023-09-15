@@ -1,0 +1,50 @@
+.header__rightSide{
+    width: 100%;
+    position: relative;
+}
+
+.rightSide__imgEl{
+    /* Ellipse 1972 */
+    box-sizing: border-box;
+    position: absolute;
+    width: 657.8px;
+    height: 401.9px;
+    top: 200.01px;
+    left: calc(1% - 720px/2 + 200.53px);
+    background: #8241EF;
+    opacity: 0.5;
+    filter: blur(100px);
+    border-radius: 11.0115px;
+    transform: rotate(-140.03deg);
+    z-index: -2;
+}
+.rightSide__imgSc{
+    position: relative;
+    left: calc(1% - 720px/2 + 200.53px);
+    top: 117.84px;
+    transform: rotate(-8.01deg);
+    z-index: -1;
+}
+.rightSide__imgGr{
+    /* Group 2087325522 */
+    position: absolute;
+    left: calc(1% - 205.34px/2 + 135.18px);
+    top: 415.28px;
+    transform: rotate(3.7deg);
+}
+
+@media (max-width: 1265px) {
+    .header__rightSide{width:100%; margin-left: 50px; margin-bottom: 40px;}
+    .rightSide__imgEl{display: none;}
+    .rightSide__imgGr{left: 45px;}
+}
+@media (max-width: 800px) {
+    .rightSide__imgGr{display: none;}
+    .header__rightSide{width: 90%;}
+    .rightSide__imgSc{
+        top: 20px;
+        margin-left: 75px;
+        width: 100%;
+        height: auto;
+    }
+}
